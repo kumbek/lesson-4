@@ -1,12 +1,9 @@
-
-const limit = 5
-let counter = 0
-
-while(counter <= limit) {
-    let result = ''
-    for (let i=0; i < counter; i++){
-        result += '*'
-    }
-    console.log(result)
-    counter++
+function fizzbuzz(){
+    for(let i = 1; i <= 100; i++){
+        if(i % 3=== 0 && i % 5=== 0) console.log(`$(i) - FizzBuzz`)
+        else if (i % 5===0) console.log(`${i} - Buzz`)
+        else if (i % 3 === 0 ) console.log(`${i} - Fizz`)
+        
+    } 
 }
+fizzbuzz()
